@@ -10,8 +10,12 @@ METADATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "metada
 def load_metadata() -> dict:
     if not os.path.exists(METADATA_PATH):
         return {}
-    with open(METADATA_PATH) as f:
-        return json.load(f)
+    try:
+        with open(METADATA_PATH) as f:
+            return json.load(f)
+    except json.JSONDecodeError as e:
+        st.error(f"metadata.json is invalid JSON: {e}. Fix it on GitHub and redeploy.")
+        return {}
 
 
 @st.cache_data
