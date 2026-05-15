@@ -40,28 +40,32 @@ def load_sessions() -> list[dict]:
             meta = metadata.get(session["id"], {})
             session["device_name"] = meta.get("device_name")
             session["last_feeding_date"] = meta.get("last_feeding_date")
+            session["feeding_interval_days"] = None
 
-            if meta.get("last_feeding_date"):
-                session_date = pd.to_datetime(session["startedAt"]).date()
-                last_feeding = pd.to_datetime(meta["last_feeding_date"]).date()
-                session["feeding_interval_days"] = (session_date - last_feeding).days
-            else:
-                session["feeding_interval_days"] = None
+            try:
+                if meta.get("last_feeding_date"):
+                    session_date = pd.to_datetime(session["startedAt"]).date()
+                    last_feeding = pd.to_datetime(meta["last_feeding_date"]).date()
+                    session["feeding_interval_days"] = (session_date - last_feeding).days
+            except Exception:
+                pass
 
-            # Manual target override — always wins when set in metadata.json
-            if meta.get("target_duration_h"):
-                session["target_h"] = float(meta["target_duration_h"])
-                peak_h = session["peak_h"]
-                diff_h = session["target_h"] - peak_h if peak_h is not None else None
-                session["diff_h"] = diff_h
-                if diff_h is None:
-                    session["result"] = "no_peak"
-                elif 0 <= diff_h <= 1.0:
-                    session["result"] = "success"
-                elif diff_h > 1.0:
-                    session["result"] = "too_early"
-                else:
-                    session["result"] = "late"
+            try:
+                if meta.get("target_duration_h"):
+                    session["target_h"] = float(meta["target_duration_h"])
+                    peak_h = session["peak_h"]
+                    diff_h = session["target_h"] - peak_h if peak_h is not None else None
+                    session["diff_h"] = diff_h
+                    if diff_h is None:
+                        session["result"] = "no_peak"
+                    elif 0 <= diff_h <= 1.0:
+                        session["result"] = "success"
+                    elif diff_h > 1.0:
+                        session["result"] = "too_early"
+                    else:
+                        session["result"] = "late"
+            except Exception:
+                pass
 
             sessions.append(session)
         except Exception:
