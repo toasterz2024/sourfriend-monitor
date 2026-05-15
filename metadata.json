@@ -42,11 +42,13 @@
   },
   "47edff2d-781c-449d-8777-018049e6d525": {
     "device_name": "F8EB",
-    "last_feeding_date": "2026-05-13"
+    "last_feeding_date": "2026-05-13",
+    "target_duration_h": 8.0
   },
   "84fe5182-9109-4d56-bd86-95f9fdb5bc2b": {
     "device_name": "A894",
-    "last_feeding_date": "2026-05-13"
+    "last_feeding_date": "2026-05-13",
+    "target_duration_h": 8.0
   },
   "3385eb4d-3f6b-4cef-9c03-12711dd38e9e": {
     "device_name": "A494",
