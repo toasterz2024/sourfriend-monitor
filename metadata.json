@@ -9,11 +9,14 @@
   },
   "f607d235-4fd6-4a30-91c6-14e372b18a49": {
     "device_name": "A094",
-    "last_feeding_date": ""
+    "last_feeding_date": "",
+    "target_duration_h": 8.0
+    
   },
   "0e818853-9b48-4053-9f9b-d9d2e3b0b825": {
     "device_name": "98F8",
-    "last_feeding_date": ""
+    "last_feeding_date": "",
+    "target_duration_h": 8.0
   },
   "635c06d3-3975-4f64-89fb-050bbca40bf5": {
     "device_name": "F4EB",
@@ -21,7 +24,8 @@
   },
   "eb859744-a669-4a42-9183-c8dc8e0ed16d": {
     "device_name": "A094",
-    "last_feeding_date": ""
+    "last_feeding_date": "",
+    "target_duration_h": 8.0
   }
   
 }
