@@ -48,6 +48,21 @@ def load_sessions() -> list[dict]:
             else:
                 session["feeding_interval_days"] = None
 
+            # Manual target override — use when targetEndTime is missing in JSON
+            if meta.get("target_duration_h") and session["target_h"] is None:
+                session["target_h"] = float(meta["target_duration_h"])
+                peak_h = session["peak_h"]
+                diff_h = session["target_h"] - peak_h if peak_h is not None else None
+                session["diff_h"] = diff_h
+                if diff_h is None:
+                    session["result"] = "no_peak"
+                elif 0 <= diff_h <= 1.0:
+                    session["result"] = "success"
+                elif diff_h > 1.0:
+                    session["result"] = "too_early"
+                else:
+                    session["result"] = "late"
+
             sessions.append(session)
         except Exception:
             pass

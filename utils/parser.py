@@ -39,7 +39,7 @@ def parse_session(json_data: dict) -> dict:
     ep1_to_peak_h = (peak_h - ep1_start_h) if (peak_h and ep1_start_h) else None
 
     started_at = pd.to_datetime(rl["startedAt"])
-    target_end_str = rl.get("targetEndTime") or rl.get("alarmTime")
+    target_end_str = rl.get("targetEndTime")  # alarmTime is phone alarm, not fermentation target
     target_end = pd.to_datetime(target_end_str) if target_end_str else None
     target_h = (target_end - started_at).total_seconds() / 3600 if target_end else None
 
