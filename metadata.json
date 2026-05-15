@@ -29,11 +29,13 @@
   },
   "4a159029-a9a5-4cf6-af8f-acbdad1af2d0": {
     "device_name": "F8EB",
-    "last_feeding_date": ""
+    "last_feeding_date": "",
+    "target_duration_h": 8.0
   },
   "d0d2fab8-8401-4637-ba7e-01f1024a8908": {
     "device_name": "A894",
-    "last_feeding_date": ""
+    "last_feeding_date": "",
+    "target_duration_h": 8.0
   },
   "c8cbcd1b-b94f-47a8-bcee-072ef5550208": {
     "device_name": "A094",
