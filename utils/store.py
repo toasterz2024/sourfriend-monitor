@@ -48,8 +48,8 @@ def load_sessions() -> list[dict]:
             else:
                 session["feeding_interval_days"] = None
 
-            # Manual target override — use when targetEndTime is missing in JSON
-            if meta.get("target_duration_h") and session["target_h"] is None:
+            # Manual target override — always wins when set in metadata.json
+            if meta.get("target_duration_h"):
                 session["target_h"] = float(meta["target_duration_h"])
                 peak_h = session["peak_h"]
                 diff_h = session["target_h"] - peak_h if peak_h is not None else None
