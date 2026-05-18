@@ -64,6 +64,10 @@
     "device_name": "98F8",
     "last_feeding_date": "2026-05-13",
     "target_duration_h": 8.0
+  },
+  "6cb68b18-0c6e-4bef-a6d3-c3c8edd8f19c": {
+    "device_name": "F8EB",
+    "last_feeding_date": "2026-05-14"
   }
   
 }
