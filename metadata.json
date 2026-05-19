@@ -100,6 +100,10 @@
   "5e11a011-9919-4357-8ec8-03d03aa4f4d5": {
     "device_name": "A494",
     "last_feeding_date": "2026-05-15"
+  },
+  "3e405ba1-8f1f-4aaa-8f9a-35ee74a2a9ae": {
+    "device_name": "A894",
+    "last_feeding_date": "2026-05-15"
   }
   
 }
