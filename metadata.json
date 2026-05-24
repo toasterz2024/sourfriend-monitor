@@ -199,7 +199,11 @@
   },
   "14428620-15aa-497b-a948-36c62ab69a0c": {
     "device_name": "A494",
-    "last_feeding_date": "026-05-22"
+    "last_feeding_date": "2026-05-22"
+  },
+  "e4ca2b44-7c09-456b-81f0-ca4cfd0838f5": {
+    "device_name": "A894",
+    "last_feeding_date": "2026-05-22"
   }
 }
 
