@@ -236,6 +236,10 @@
   "800fedac-2df7-4e3e-a818-241f722d7e41": {
     "device_name": "A894",
     "last_feeding_date": "2026-05-24"
+  },
+  "92fbcef9-40cd-42ae-af5b-3a5244ca4baa": {
+    "device_name": "A094",
+    "last_feeding_date": "2026-05-24"
   }
 
 }
