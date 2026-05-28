@@ -248,6 +248,10 @@
   "00033980-4ded-48ab-9013-f4557ed867a8": {
     "device_name": "A494",
     "last_feeding_date": "2026-05-24"
+  },
+    "16ed60a5-6bba-424b-826b-07c210ddb3a5": {
+    "device_name": "A094",
+    "last_feeding_date": "2026-05-26"
   }
 
 }
