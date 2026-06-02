@@ -297,8 +297,12 @@
     "device_name": "A094",
     "last_feeding_date": "2026-05-30"
   },
-  "e9228621-f6c9-4bb3-bfd7-93679f26732e": {
+  "d6a83530-7de8-4bef-a264-80cd8d6b147e": {
     "device_name": "98F8",
+    "last_feeding_date": "2026-05-30"
+  },
+  "e5f87270-2190-41ff-9302-0daeb1b07e39": {
+    "device_name": "A494",
     "last_feeding_date": "2026-05-30"
   }
 
