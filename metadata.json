@@ -304,6 +304,10 @@
   "e5f87270-2190-41ff-9302-0daeb1b07e39": {
     "device_name": "A494",
     "last_feeding_date": "2026-05-30"
+  },
+  "a5b30fc5-f712-4f1b-b4d7-a8f3a18a5a24": {
+    "device_name": "A894",
+    "last_feeding_date": "2026-05-30""
   }
 
 }
