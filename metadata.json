@@ -383,7 +383,11 @@
   },
   "2ecd8026-f66b-4479-8d21-cfaaffae3fd1": {
     "device_name": "F4EB",
-    "last_feeding_date": "2026-06-15"
+    "last_feeding_date": "2026-06-16"
+  },
+  "5e38f2b0-1293-496f-8bc4-ccc1c50225c4": {
+    "device_name": "F8EB",
+    "last_feeding_date": "2026-06-16"
   }
 }
 
